@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Send POST /transfers with blocked recipient account ID",
+    "expectedResult": "HTTP 422 Unprocessable Entity",
+    "steps": []
+  },
+  {
+    "name": "Verify response body",
+    "expectedResult": null,
+    "steps": [
+      {
+        "name": "Field 'errorCode' equals 'ACCOUNT_BLOCKED'",
+        "expectedResult": null,
+        "steps": []
+      },
+      {
+        "name": "Field 'message' is non-empty string",
+        "expectedResult": null,
+        "steps": []
+      }
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "content": [
+    {"id": 2301, "name": "Transfer to blocked account"},
+    {"id": 2302, "name": "Successful transfer between own accounts"}
+  ],
+  "totalPages": 1,
+  "totalElements": 2,
+  "number": 0,
+  "size": 100,
+  "first": true,
+  "last": true
+}

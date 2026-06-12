@@ -1,0 +1,30 @@
+{
+  "id": 2301,
+  "name": "Transfer to blocked account",
+  "description": "Verify that a fund transfer is rejected when the recipient account is blocked.",
+  "precondition": "Sender account has sufficient balance. Recipient account status is BLOCKED.",
+  "expectedResult": "API returns 422 with error code ACCOUNT_BLOCKED.",
+  "status": {"name": "Ready"},
+  "automated": false,
+  "tags": [
+    {"name": "api"},
+    {"name": "negative"}
+  ],
+  "customFields": [
+    {
+      "customField": {"name": "Suite"},
+      "name": "Transfers/Negative"
+    },
+    {
+      "customField": {"name": "Priority"},
+      "name": "P1"
+    }
+  ],
+  "links": [
+    {
+      "name": "BAN-17",
+      "url": "https://jira.example.com/browse/BAN-17",
+      "type": "issue"
+    }
+  ]
+}
