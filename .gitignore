@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+SPEC-*.md
+.venv/
+.pytest_cache/
+__pycache__/
+*.pyc
+.mypy_cache/
+dist/
+.ruff_cache/
+*.egg-info/
+mirror/
+.coverage
+htmlcov/
+*.pyi
