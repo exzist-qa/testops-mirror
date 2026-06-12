@@ -55,7 +55,7 @@ for item in items:
 ## Dev setup
 
 ```bash
-git clone https://github.com/yourusername/testops-mirror
+git clone https://github.com/exzist-qa/testops-mirror
 cd testops-mirror
 python3.12 -m venv .venv
 source .venv/bin/activate

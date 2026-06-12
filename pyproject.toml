@@ -32,9 +32,9 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/testops-mirror"
-Repository = "https://github.com/yourusername/testops-mirror"
-Issues = "https://github.com/yourusername/testops-mirror/issues"
+Homepage = "https://github.com/exzist-qa/testops-mirror"
+Repository = "https://github.com/exzist-qa/testops-mirror"
+Issues = "https://github.com/exzist-qa/testops-mirror/issues"
 
 [project.optional-dependencies]
 dev = [

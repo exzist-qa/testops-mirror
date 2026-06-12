@@ -37,7 +37,7 @@ docker run --rm \
   -e TESTOPS_ENDPOINT=https://testops.example.com \
   -e TESTOPS_TOKEN=your-token \
   -v $(pwd)/mirror:/mirror \
-  ghcr.io/yourusername/testops-mirror \
+  ghcr.io/exzist-qa/testops-mirror \
   sync --project-id 42 --repo /mirror
 ```
 
