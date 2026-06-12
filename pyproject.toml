@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "testops-mirror"
-version = "0.1.0"
+version = "0.1.1"
 description = "Mirror test cases from any TMS into a Git repository as Markdown files"
 readme = "README.md"
 license = { file = "LICENSE" }
