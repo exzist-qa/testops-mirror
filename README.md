@@ -4,12 +4,12 @@
 
 ```
 mirror/
-├── Shipments/
+├── Transfers/
 │   ├── Negative/
-│   │   └── TC-1042-ship-without-cargo.md
-│   └── TC-1001-basic-shipment.md
+│   │   └── TC-2301-transfer-to-blocked-account.md
+│   └── TC-2201-transfer-between-own-accounts.md
 └── Auth/
-    └── TC-2001-login-valid-credentials.md
+    └── TC-1001-login-with-valid-credentials.md
 ```
 
 ## Why
@@ -45,32 +45,32 @@ docker run --rm \
 
 ```markdown
 ---
-id: '1042'
-name: Ship without cargo
+id: '2301'
+name: Transfer to blocked account
 status: Ready
 automated: false
 tags: [api, negative]
 links:
-  - {name: BUG-42, url: 'https://tracker.local/BUG-42', type: issue}
-source: {url: 'https://testops.example.com/project/42/test-cases/1042', project: '42'}
+  - {name: BAN-17, url: 'https://jira.example.com/browse/BAN-17', type: issue}
+source: {url: 'https://testops.example.com/project/42/test-cases/2301', project: '42'}
 ---
 
-# Ship without cargo
+# Transfer to blocked account
 
 ## Preconditions
 
-The ship must have an active voyage.
+Sender account has sufficient balance. Recipient account status is BLOCKED.
 
 ## Steps
 
-1. Send `POST /ship`
-    - **Expected:** `409 Conflict`
+1. Send `POST /transfers`
+    - **Expected:** `422 Unprocessable Entity`
 2. Check response body
-    1. Field `error` is present
+    1. Field `code` equals `ACCOUNT_BLOCKED`
 
 ## Expected result
 
-API returns 409 with a descriptive error message.
+API returns 422 with error code ACCOUNT_BLOCKED.
 ```
 
 ## Supported TMS
